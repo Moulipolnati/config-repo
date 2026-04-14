@@ -1,0 +1,4 @@
+spring:
+  apllication:
+   name: customer-service
+  datasource:
