@@ -1,0 +1,4 @@
+global:
+  message: welcome to order service prod environment !!
+server:
+  port: 8085
