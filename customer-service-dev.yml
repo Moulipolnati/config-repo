@@ -1,14 +1,18 @@
 global:
   message: welcome to customer service dev environment!!
+
 server:
-  port: 8082
+  port: 8081   # keep consistent
+
 message: hello from dev!
+
 spring:
   datasource:
-    url: jdbc:mysql://localhost:3306/customer_master
+    url: jdbc:mysql://localhost:3306/microservices
     username: root
-    password:
+    password: Mouli@3022  # ← put your real password
+
   jpa:
     hibernate:
       ddl-auto: update
-    shoe-sql: true
+    show-sql: true
