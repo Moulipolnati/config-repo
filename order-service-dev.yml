@@ -1,7 +1,16 @@
-global:
-  message: welcome to order service dev environment!!
-
 server:
   port: 8082
 
-message: Hello from order dev!
+spring:
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driver-class-name: org.h2.Driver
+
+  h2:
+    console:
+      enabled: true
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
