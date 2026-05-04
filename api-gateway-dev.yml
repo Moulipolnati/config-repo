@@ -9,11 +9,15 @@ spring:
           uri: lb://customer-service
           predicates:
             - Path=/customer/**
+          filters:
+            - StripPrefix=0
 
         - id: order-service
           uri: lb://order-service
           predicates:
             - Path=/order/**
+          filters:
+            - StripPrefix=0
 
 eureka:
   client:
